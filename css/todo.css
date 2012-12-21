@@ -1,0 +1,41 @@
+body {
+    background: #eee;
+    width: 960px;
+    margin: 0 auto;
+}
+.todo {
+    background: #fff;
+    width: 960px;
+    margin: -250px 0 0 -480px;
+}
+header {
+    width: 100%;
+}
+#input_todo {
+    width: 920px;
+    height: 38px;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+.check_all {
+    display: inline-block;
+}
+
+#todo_list {
+    width: 100%;
+    margin: 0 auto;
+}
+#todo_list li {
+    list-style: none;
+    position: relative;
+}
+#todo_list .divider {
+    height: 1px;
+    margin: 8px 1px;
+    overflow: hidden;
+    background-color: #e5e5e5;
+    border-bottom: 1px solid #ffffff;
+}
+.todo_text {
+    display: inline-block;
+}
