@@ -15,11 +15,16 @@
             <input id="input_todo" class="pagination-centered" type="text" placeholder="输入待办事项！">
         </header>
         <section>
+<<<<<<< HEAD
             <input id="check_all" type="checkbox"><label class="check_all" for="check_all">&nbsp;全部标记已完成</label>
+=======
+            <input id="check_all_done" type="checkbox"><label class="check_all" for="check_all">&nbsp;全部标记已完成</label>
+>>>>>>> gh-pages
         </section>
     </div>
     <div class="modal-body">
         <ul id="todo_list">
+<<<<<<< HEAD
             <li class="todo_over">
                 <input type="checkbox">
                 <label class="todo_text">a</label>
@@ -33,6 +38,33 @@
     </div>
 
 </div>
+=======
+        </ul>
+    </div>
+    <div class="modal-footer">
+    </div>
+
+</div>
+<!--Templates-->
+<script type="text/template" id="item-template">
+    <div class="todo_display <%= done ? 'todo_over' : '' %>">
+        <input class="check" type="checkbox"<%= done ? 'checked="checked"' : '' %>>
+        <label class="todo_text"><%= content %></label>
+        <a class="close">×</a>
+    </div>
+    <div class="edit">
+        <input class="edit-input" type="text" value="<%= content %>">
+    </div>
+</script>
+<script type="text/template" id="stats-template">
+    <% if (done) { %>
+    <label id="clear_over" class="btn btn-info pull-right">清除<%= done %>已完成</label>
+    <% } %>
+    <% if (total) { %>
+    <label class="pull-left"><%= remaining %>条待办</label>
+    <% } %>
+</script>
+>>>>>>> gh-pages
 
 <script src="js/vendor/jquery-1.8.2.min.js"></script>
 <script src="js/vendor/underscore-min.js"></script>
