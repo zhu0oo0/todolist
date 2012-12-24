@@ -39,3 +39,7 @@ header {
 .todo_text {
     display: inline-block;
 }
+.todo_over .todo_text{
+    color: #999;
+    text-decoration: line-through;
+}
