@@ -6,7 +6,8 @@ body {
 .todo {
     background: #fff;
     width: 960px;
-    margin: -250px 0 0 -480px;
+    margin: 0 0 0 -480px;
+    top: 30px;
 }
 header {
     width: 100%;
@@ -28,13 +29,13 @@ header {
 #todo_list li {
     list-style: none;
     position: relative;
+    padding-bottom: 6px;
+    margin-bottom: 6px;
+    border-bottom: 1px solid #e5e5e5;
 }
-#todo_list .divider {
-    height: 1px;
-    margin: 8px 1px;
-    overflow: hidden;
-    background-color: #e5e5e5;
-    border-bottom: 1px solid #ffffff;
+
+.close {
+    margin-top: 3px;
 }
 .todo_text {
     display: inline-block;
@@ -42,4 +43,13 @@ header {
 .todo_over .todo_text{
     color: #999;
     text-decoration: line-through;
+}
+.editing .todo_display, .edit {
+    display: none;
+}
+.editing .edit {
+    display: block;
+}
+.edit-input {
+    width: 920px;
 }
