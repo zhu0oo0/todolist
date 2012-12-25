@@ -135,7 +135,7 @@ $(function(){
             _.bindAll(this, 'addOne', 'addAll', 'render', 'toggleAllComplete');
 
             this.input = this.$("#input_todo");
-            this.allCheckbox = this.$("#check_all_done");
+            this.allCheckbox = this.$("#check_all_done")[0];
 
             Todos.bind('add',   this.addOne);
             Todos.bind('reset', this.addAll);
