@@ -6,9 +6,7 @@
  * To change this template use File | Settings | File Templates.
  */
 $(function(){
-<<<<<<< HEAD
 
-=======
     /**
      *基本的Todo模型，属性为：content,order,done。
      **/
@@ -197,6 +195,6 @@ $(function(){
     });
 
     var App = new AppView;
->>>>>>> gh-pages
+
 });
 

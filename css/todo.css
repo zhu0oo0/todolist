@@ -6,12 +6,8 @@ body {
 .todo {
     background: #fff;
     width: 960px;
-<<<<<<< HEAD
-    margin: -250px 0 0 -480px;
-=======
     margin: 0 0 0 -480px;
     top: 30px;
->>>>>>> gh-pages
 }
 header {
     width: 100%;
@@ -33,23 +29,10 @@ header {
 #todo_list li {
     list-style: none;
     position: relative;
-<<<<<<< HEAD
-}
-#todo_list .divider {
-    height: 1px;
-    margin: 8px 1px;
-    overflow: hidden;
-    background-color: #e5e5e5;
-    border-bottom: 1px solid #ffffff;
-=======
-    padding-bottom: 6px;
-    margin-bottom: 6px;
-    border-bottom: 1px solid #e5e5e5;
 }
 
 .close {
     margin-top: 3px;
->>>>>>> gh-pages
 }
 .todo_text {
     display: inline-block;
@@ -57,8 +40,6 @@ header {
 .todo_over .todo_text{
     color: #999;
     text-decoration: line-through;
-<<<<<<< HEAD
-=======
 }
 .editing .todo_display, .edit {
     display: none;
@@ -68,5 +49,4 @@ header {
 }
 .edit-input {
     width: 920px;
->>>>>>> gh-pages
 }
