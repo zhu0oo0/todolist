@@ -29,6 +29,9 @@ header {
 #todo_list li {
     list-style: none;
     position: relative;
+    padding-bottom: 6px;
+    margin-bottom: 6px;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .close {
