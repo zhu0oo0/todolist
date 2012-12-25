@@ -73,10 +73,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="50" selection-start="1003" selection-end="1012" vertical-scroll-proportion="-10.178572">
+            <state line="25" column="10" selection-start="887" selection-end="887" vertical-scroll-proportion="0.35514018">
               <folding />
             </state>
           </provider>
@@ -91,10 +91,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="todo.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="todo.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/todo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="191" column="48" selection-start="5918" selection-end="5918" vertical-scroll-proportion="2.3161633">
+            <state line="191" column="48" selection-start="5918" selection-end="5918" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -603,16 +603,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/js/todo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="50" selection-start="1003" selection-end="1012" vertical-scroll-proportion="-10.178572">
+        <state line="191" column="48" selection-start="5918" selection-end="5918" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/todo.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="191" column="48" selection-start="5918" selection-end="5918" vertical-scroll-proportion="2.3161633">
+        <state line="25" column="10" selection-start="887" selection-end="887" vertical-scroll-proportion="0.35514018">
           <folding />
         </state>
       </provider>
