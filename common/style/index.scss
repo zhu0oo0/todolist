@@ -1,0 +1,219 @@
+body{
+    --weui-BG-0: #ededed;
+    --weui-BG-1: #f7f7f7;
+    --weui-BG-2: #fff;
+    --weui-BG-3: #f7f7f7;
+    --weui-BG-4: #4c4c4c;
+    --weui-BG-5: #fff;
+    --weui-FG-0: rgba(0, 0, 0, 0.9);
+    --weui-FG-HALF: rgba(0, 0, 0, 0.9);
+    --weui-FG-1: rgba(0, 0, 0, 0.5);
+    --weui-FG-2: rgba(0, 0, 0, 0.3);
+    --weui-FG-3: rgba(0, 0, 0, 0.1);
+    --weui-RED: #fa5151;
+    --weui-ORANGE: #fa9d3b;
+    --weui-YELLOW: #ffc300;
+    --weui-GREEN: #91d300;
+    --weui-LIGHTGREEN: #95ec69;
+    // --weui-BRAND: #07c160;
+    --weui-BRAND: #1177FF;
+    --weui-BLUE: #10aeff;
+    --weui-INDIGO: #1485ee;
+    --weui-PURPLE: #6467f0;
+    --weui-WHITE: #fff;
+    --weui-LINK: #576b95;
+    --weui-TEXTGREEN: #06ae56;
+    --weui-FG: black;
+    --weui-BG: white;
+    --weui-TAG-TEXT-ORANGE: #fa9d3b;
+    --weui-TAG-BACKGROUND-ORANGE: rgba(250, 157, 59, 0.1);
+    --weui-TAG-TEXT-GREEN: #06ae56;
+    --weui-TAG-BACKGROUND-GREEN: rgba(6, 174, 86, 0.1);
+    --weui-TAG-TEXT-BLUE: #10aeff;
+    --weui-TAG-BACKGROUND-BLUE: rgba(16, 174, 255, 0.1);
+    --weui-TAG-TEXT-BLACK: rgba(0, 0, 0, 0.5);
+    --weui-TAG-BACKGROUND-BLACK: rgba(0, 0, 0, 0.05);
+}
+.flex_center-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.flex_center-space-between {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.flex_center-space-around {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.flex-column_center-center {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.pic {
+	display: block;
+	&.bg {
+		width: 100%;
+		height: 100%;
+	}
+	&.grayscale {
+		filter: grayscale(100%);
+	}
+}
+
+.big-bg {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	opacity: 1;
+	transition: all 1s;
+	&.hide {
+		opacity: 0;
+	}
+}
+
+.mask {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.row {
+	display: flex;
+	gap: 20rpx;
+	&.column {
+		flex-direction: column;
+	}
+	&.wrap {
+		flex-wrap: wrap;
+	}
+}
+.col {
+	overflow: hidden;
+}
+.link {
+    color: var(--weui-LINK);
+}
+.scroll-h {
+	height: 100%;
+}
+.scroll-w {
+	width: 100%;
+}
+.more-btn {
+		font-size: 12px;
+		line-height: 30px;
+		text-align: center;
+		margin-top: 30px;
+		color: #1177FF;
+	}
+
+	.no-data {
+		font-size: 12px;
+		line-height: 30px;
+		text-align: center;
+		margin-top: 30px;
+		color: #999;
+	}
+.weui-cells {
+	margin-top: 8px;
+	background-color: var(--weui-BG-2);
+	overflow: hidden;
+	position: relative;
+	&::before {
+		top: 0;
+		border-top: 1px solid var(--weui-FG-3);
+		transform-origin: 0 0;
+		transform: scaleY(.5);
+	}
+}
+.weui-cells::after, .weui-cells::before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    color: var(--weui-FG-3);
+    z-index: 2;
+}
+.weui-cell {
+    padding: 16px;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    line-height: 1.41176471;
+    font-size: 17px;
+    color: var(--weui-FG-0);
+		border-bottom: 1px solid var(--weui-FG-3);
+}
+.weui-cell_access {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    color: inherit;
+}
+.weui-cell__bd {
+    flex: 1;
+    min-width: 0;
+}
+.weui-cell__desc {
+    font-size: 12px;
+    color: var(--weui-FG-2);
+    line-height: 1.4;
+    padding-top: 4px;
+}
+.weui-cells::after, .weui-cells::before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    color: var(--weui-FG-3);
+    z-index: 2;
+}
+.weui-cells::after {
+    bottom: 0;
+    border-bottom: 1px solid var(--weui-FG-3);
+    transform-origin: 0 100%;
+    transform: scaleY(.5);
+}
+
+.weui-btn {
+    position: relative;
+    display: block;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8px 14px;
+    box-sizing: border-box;
+    font-weight: 700;
+    font-size: 17px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    line-height: 1.3;
+    border-radius: 8px;
+		background-color: rgb(242, 242, 242);
+    -webkit-user-select: none;
+    user-select: none;
+}
+.weui-btn_default {
+    color: #1177FF !important;
+}
+.weui-btn_primary {
+    background: #1177FF !important;
+}
+
+.weui-steps {
+    line-height: var(--weui-STEPS-LINEHEIGHT);
+    font-size: calc(1px * var(--weui-STEPS-FONT-SIZE));
+}
+.weui-steps_vertical {
+    position: relative;
+}

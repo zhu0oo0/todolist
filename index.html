@@ -1,55 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>todolist</title>
-    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
-    <link href="css/bootstrap-responsive.min.css" type="text/css" rel="stylesheet">
-    <link href="css/todo.css" type="text/css" rel="stylesheet">
-</head>
-<body>
-<div class="todo modal" id="todo_app">
-    <div class="modal-header">
-        <header>
-            <h1 class="pagination-centered">Todo List</h1>
-            <input id="input_todo" class="pagination-centered" type="text" placeholder="输入待办事项！">
-        </header>
-        <section>
-            <input id="check_all_done" type="checkbox"><label class="check_all" for="check_all_done">&nbsp;全部标记已完成</label>
-        </section>
-    </div>
-    <div class="modal-body">
-        <ul id="todo_list">
-        </ul>
-    </div>
-    <div class="modal-footer">
-    </div>
-
-</div>
-<!--Templates-->
-<script type="text/template" id="item-template">
-    <div class="todo_display <%= done ? 'todo_over' : '' %>">
-        <input class="check" type="checkbox"<%= done ? 'checked="checked"' : '' %>>
-        <label class="todo_text"><%= content %></label>
-        <a class="close">×</a>
-    </div>
-    <div class="edit">
-        <input class="edit-input" type="text" value="<%= content %>">
-    </div>
-</script>
-<script type="text/template" id="stats-template">
-    <% if (done) { %>
-    <label id="clear_over" class="btn btn-info pull-right">清除<%= done %>已完成</label>
-    <% } %>
-    <% if (total) { %>
-    <label class="pull-left"><%= remaining %>条待办</label>
-    <% } %>
-</script>
-
-<script src="js/vendor/jquery-1.8.2.min.js"></script>
-<script src="js/vendor/underscore-min.js"></script>
-<script src="js/vendor/backbone.js"></script>
-<script src="js/vendor/backbone-localstorage.js"></script>
-<script src="js/todo.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      var coverSupport = 'CSS' in window && typeof CSS.supports === 'function' && (CSS.supports('top: env(a)') ||
+        CSS.supports('top: constant(a)'))
+      document.write(
+        '<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' +
+        (coverSupport ? ', viewport-fit=cover' : '') + '" />')
+    </script>
+    <title></title>
+    <!--preload-links-->
+    <!--app-context-->
+  </head>
+  <body>
+    <div id="app"><!--app-html--></div>
+    <script type="module" src="/main.js"></script>
+  </body>
 </html>
